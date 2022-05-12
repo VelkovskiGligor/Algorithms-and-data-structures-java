@@ -1,0 +1,24 @@
+interface Queue<E>{
+	public void clear();
+	public boolean isEmpty();
+	public int size();
+	public E peek();
+	public void enqueue();
+	public E dequeue();
+}
+class SLLNode<E>{
+	private E element;
+	private SLLNode<E> succ;
+	public SLLNode(E el,SLLNode<E> succ) {
+		this.element=el;
+		this.succ=succ;
+	}
+}
+public class redica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

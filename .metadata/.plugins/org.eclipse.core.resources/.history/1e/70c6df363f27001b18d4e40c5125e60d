@@ -1,0 +1,67 @@
+interface Queue<E>{
+	public void clear();
+	public boolean isEmpty();
+	public int size();
+	public E peek();
+	public void enqueue();
+	public E dequeue();
+}
+class SLLNode<E>{
+	private E element;
+	private SLLNode<E> succ;
+	public SLLNode(E el,SLLNode<E> succ) {
+		this.element=el;
+		this.succ=succ;
+	}
+}
+class LinkedQueue<E> implements Queue<E>{
+	private SLLNode<E> front;
+	private SLLNode<E> rear;
+	private int lenght;
+	public LinkedQueue() {
+		clear();
+	}
+	@Override
+	public void clear() {
+		front=rear=null;
+		lenght=0;
+	}
+
+	@Override
+	public boolean isEmpty() {
+		return lenght==0;
+	}
+
+	@Override
+	public int size() {
+		// TODO Auto-generated method stub
+		return 0;
+	}
+
+	@Override
+	public E peek() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+
+	@Override
+	public void enqueue() {
+		// TODO Auto-generated method stub
+		
+	}
+
+	@Override
+	public E dequeue() {
+		// TODO Auto-generated method stub
+		return null;
+	}
+	
+}
+public class redica {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}
